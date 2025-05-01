@@ -1,14 +1,14 @@
 #include <LiquidCrystal.h>
 
-#define LCD_RS 12   // Register Select pin - RS of the LCD module
-#define LCD_E  11   // Enable pin - E of the LCD module
-#define LCD_D4  5   // Data4 pin - D4 of the LCD module
-#define LCD_D5  4   // Data5 pin - D5 of the LCD module
-#define LCD_D6  3   // Data6 pin - D6 of the LCD module
-#define LCD_D7  2   // Data7 pin - D7 of the LCD module
-#define LCD_COL 16  // LCD uses 16 columns
-#define LCD_ROW 2   // LCD uses 2 rows
-#define LCD_CONTRAST  6 // LCD constrast pin
+#define LCD_RS 12   
+#define LCD_E  11   
+#define LCD_D4  5   
+#define LCD_D5  4   
+#define LCD_D6  3   
+#define LCD_D7  2   
+#define LCD_COL 16  
+#define LCD_ROW 2   
+#define LCD_CONTRAST  6 
 
 int Contrast = 127;
 
@@ -41,7 +41,6 @@ void loop() {
  
   float ultrasonicDistance = getDistanceUltrasonic();
 
-  /* Displaying current distance on serial monitor */ 
   Serial.print("Ultrasonic Distance: ");
   Serial.println(ultrasonicDistance);
 
